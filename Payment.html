@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <title>E-Pharmacy Payment Method</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>E-Pharmacy Payment Method</h1>
+        </header>
+        <div>
+            <br>
+            <label for="quantity4">Select Quantity:</label> <br> 
+            <input type="number" id="quantity4" name="quantity4" min="1" value="1">
+        </div>
+    
+        <form class="payment-form">
+            <h2>Select Payment Method</h2>
+            
+            <div class="payment-option">
+                <input type="radio" id="credit-card" name="payment" value="credit-card" checked>
+                <label for="credit-card">Credit/Debit Card</label>
+            </div>
+            
+            <div class="payment-option">
+                <input type="radio" id="paypal" name="payment" value="paypal">
+                <label for="paypal">Bkash</label>
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" id="bank-transfer" name="payment" value="bank-transfer">
+                <label for="bank-transfer">Nagad</label>
+            </div>
+
+            <div class="payment-details">
+                <h3>Payment Details</h3>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="" required>
+                <label for="card-number">Phone Number:</label>
+                <input type="text" id="Phone number" name="Phone Number" placeholder="" required>
+
+
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+            </div>
+
+            
+
+            <button type="button" class="checkout-button">Proceed to Checkout</button>
+
+            <div class="p">
+                <button><a href="mp.html">Previous</a></button> 
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
